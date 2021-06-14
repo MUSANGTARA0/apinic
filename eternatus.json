@@ -1,0 +1,16 @@
+{
+    "name": "apinic",
+    "version": "1.0",
+    "description": "api in picnic!",
+    "command": {
+        "start": "clear && uvicorn api.main:app",
+        "dev": "clear && uvicorn api.main:app --reload",
+        "github": "git add . && git commit -am 'initial commit' && git push origin master"
+    },
+    "dependecies": [
+        "pydantic",
+        "fastapi",
+        "psycopg2",
+        "psycopg2-binary"
+    ]
+}
